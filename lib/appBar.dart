@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 Widget appBar() {
   return Padding(
@@ -7,10 +8,7 @@ Widget appBar() {
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 10, right: 20),
-          child: Text(
-            'miro',
-            style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-          ),
+          child: SvgPicture.asset('assets/logo.svg'),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 10, right: 20),
